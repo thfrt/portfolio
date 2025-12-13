@@ -183,7 +183,7 @@ header .header-content{
     display: block;
     width: 100%;
     height: 100%;
-    padding: .5em 1.5em; /* gleiche Höhe wie früher das li */
+    padding: .5em 1.5em; 
 }
 
 .nav-link:visited {
@@ -642,18 +642,35 @@ footer p{
 
 /* #region: -------- Handy -------- */
 @media(max-width: 850px) {
-    /* Portfolio */
+    .content{
+        padding: 22.4px;
+    }
+
     .projects, .ps-projects, #about-me{grid-template-columns: 1fr;}
+
+    .projects-top{
+        margin-top: 5em;
+    }
 
     .tile{height: 36em;}
 
+    #pg-nav{
+        width: 95%;
+        grid-gap: .2em;
+        margin: 0 auto;
+    }
+
     #pg-nav ul{
         width: 100%;
-        grid-gap: 1em;
     }
 
     .thumbnail-info{
         display: none;
+    }
+
+    .nav-link{
+        font-size: 1em;
+        padding: .5em 0em; 
     }
 
     .thumbnail-name{
@@ -663,5 +680,17 @@ footer p{
     .overlay{
         transform: translateY(-6px) translateX(-2px);
     }
+
+    .card-text{
+        top: 32px;    
+        left: 32px;
+    }
+
+    .card-container {
+        width: min(80vw, 600px);    
+        transform: translate(0em, 1em) rotate(-7deg);
+        overflow: hidden;
+    }
+
 }
 /* #endregion */
