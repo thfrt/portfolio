@@ -1,0 +1,667 @@
+@font-face {
+  font-family: "Geist";
+  src: url("../fonts/Geist-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Geist";
+  src: url("../fonts/Geist-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Geist";
+  src: url("../fonts/Geist-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
+/* #region: -------- Page Styles -------- */
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --black: #000000;
+    --light-gray: #E8E6E5;
+    --white: #FFFFFF;
+    --orange: #FD6220;
+}
+
+main{
+    margin: 0 auto;
+}
+
+.wrapper, header .header-content{
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+body {
+    font-size: 16px;
+    font-family: "Geist", Arial, Helvetica, sans-serif;
+    background-color: var(--light-gray);
+}
+
+.content{
+    padding: 44.8px;
+}
+
+.links{
+    color: var(--black);
+}
+
+.links:visited{
+    color: var(--black);
+}
+
+.links:hover{
+    color: var(--black);
+    font-weight: 600;
+}
+
+/* #endregion */
+
+
+
+/* #region: -------- Text -------- */
+/* 16px = 1em */
+p {
+    font-size: 1em; /* 16px */
+    line-height: 1.4em; /* 22.4px */
+    max-width: 45em; /* nicht zu viele Zeichen pro Zeile */
+    font-weight: 300;
+}
+
+h1{
+    font-size: 6em; /* 96px */
+    line-height: .9em;
+    letter-spacing: -3px;
+    font-weight: 800;
+    max-width: 5em;
+    margin-top: 22.4px;
+}
+
+h2{
+    font-size: 5em; /* 80px */
+    line-height: 1.2em;
+    letter-spacing: -3px;
+    font-weight: 800;
+}
+
+h3{
+    font-size: 1em; 
+    line-height: 1.4em;
+    margin-top: 0.6667em;  
+    margin-bottom: 0em;
+    font-weight: 800;
+}
+
+.p-mid{
+    font-size: 1.5em
+}
+
+.p-big{
+    font-size: 2.2em;
+    line-height: 1.2em;
+}
+
+.p-bold{
+    font-weight: 800;
+}
+
+#mail{
+    font-size: 3.5em;
+    font-weight: 800;
+    padding-top: .2em;
+}
+
+/* #endregion */
+
+
+
+/* #region: -------- Navigation -------- */
+header{
+    position: fixed; 
+    top: 0;
+    width: 100%;
+    height: 4.5em;
+    z-index: 20;
+}
+
+header .header-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    height: 100%;
+}
+
+/* Nav Elemente */
+#pg-nav {
+    text-align: center;
+}
+
+#pg-nav ul{
+    list-style: none;
+}
+
+#pg-nav ul {
+    display: grid;
+    grid-template-areas: ". . . .";
+    grid-gap: 1.5em;
+    padding: 0;
+    width: 600px;
+}
+
+#pg-nav li:hover{
+    cursor: pointer;
+    background-color: #FF8855;
+}
+
+#pg-nav a:hover{
+    color: var(--black);
+}
+
+#pg-nav ul li{
+    border: 1px solid var(--black);
+    border-radius: 50px;
+    background-color: var(--orange);
+}
+
+.nav-link{
+    color: var(--black);
+    font-size: 1em; /* 16px */
+    font-weight: 300;
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: .5em 1.5em; /* gleiche Höhe wie früher das li */
+}
+
+.nav-link:visited {
+    color: var(--black);
+}
+/* #endregion */
+
+
+
+/* #region: -------- Welcome -------- */
+.hero, .contact{
+    position: relative;
+    height: 94vh;
+    background: var(--orange); 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;  
+    align-items: center;     
+}
+
+.card-container {
+    position: relative; 
+    transform: translate(-3em, 1em) rotate(-7deg);
+    width: min(64vw, 880px);    
+}
+
+.card-svg {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+}
+
+.card-text {
+    position: absolute;
+    top: 62px;    
+    left: 62px;
+    z-index: 2;
+}
+
+#occupations{
+    position: absolute;
+    bottom: 62px;  
+    left: 62px;     
+    font-size: min(1.5em, 1.6vw);
+    z-index: 2;
+}
+
+.arrows{
+    width: 60px;
+    background-color: var(--white);
+    padding: 12px;
+    border-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 4px 6px;
+}
+
+#continue-arrow{
+    position: absolute;
+    bottom: -30px;  
+    left: 50%;
+    transform: translateX(-50%);    
+}
+
+#continue-arrow:hover{
+    background-color: #EEEEEE;
+}
+
+.hero-picture{
+    z-index: 0;
+    position: absolute;
+    right: -6em;
+    bottom: -3em;
+    transform: rotate(7deg);
+    height: 280px;
+    width: 280px;
+    object-fit: cover;
+    border-radius: 200px;
+}
+
+#hero-about-me{
+    position: absolute;
+    transform: rotate(39deg);
+    bottom: 38%;  
+    right: 7%;   
+    z-index: 2;
+}
+/* #endregion*/
+
+
+/* #region: -------- Projects Top -------- */
+.projects-top {
+    padding-top: 10em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap:  44.8px; /* row-gap column-gap */
+}
+
+.projects-left {
+    margin-top: auto; 
+    flex: 1 340px;         
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;  
+    border-bottom: 1px solid var(--black);
+    padding-bottom: 0.5em;
+}
+
+.projects-right {
+    flex: 1 340px;
+    border-bottom: 1px solid var(--black);
+    padding-bottom: 22.4px;
+}
+
+.filters{
+    margin: auto 0px 19px 0px;
+    display: flex;
+    gap: 12px;
+}
+
+#project-header{
+    margin-right: 32px;
+}
+
+.filter-chip {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    padding: 6px 12px;
+    border-radius: 40px;
+    cursor: pointer;
+
+    border: 2.5px solid var(--orange);
+    background: #FD622044;
+    font-size: 16px;
+    font-family: "Geist", Arial, Helvetica, sans-serif;
+    font-weight: 300;
+
+    transition: background .25s;
+}
+
+.filter-chip.active {
+    background: var(--orange);
+    color: var(--black);
+}
+
+.filter-chip .check {
+    opacity: 0;
+    transition: opacity 0.15s;
+}
+
+.filter-chip.active .check {
+    opacity: 1;
+}
+
+.filter-icon{
+    width: .8em;
+}
+
+
+/* #endregion */
+
+
+
+/* #region: -------- Portfolio -------- */
+.projects, #about-me {
+    margin-top: 3em;
+    margin-bottom: 3em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 6.5em 3em;
+}
+
+.project-tile {
+    position: relative;
+}
+
+.thumbnail-tile {
+    display: flex;
+    justify-content: center;
+    overflow: visible;
+    position: relative;
+}
+
+.projects .thumbnail-tile{
+    cursor: pointer;
+}
+
+.image-tile{
+    display: flex;
+    justify-content: center;
+}
+
+.thumbnail {
+    width: 100%;
+    transform: scale(1.045);
+}
+
+.thumbnail-name {
+    max-width: 10px;
+    line-height: 1em;
+    font-size: 1.7em;
+    font-weight: 800;
+    letter-spacing: -.04em;
+}
+
+.thumbnail-icon-box {
+    display: flex;
+    position: absolute;
+    bottom: 1.4em;
+    right: 1em;
+    gap: 0.5em;
+}
+
+.thumbnail-icon {
+    width: 36px;
+    height: 36px;
+    padding: 8px;
+    background: var(--orange);
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.thumbnail-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.thumbnail-info {
+    font-size: .8em;
+}
+
+.project-text, .ps-text{
+    display: flex;
+    align-items:end;
+    border-bottom: 1px solid var(--black);
+    padding-bottom: 22.4px;
+}
+
+.tile-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+/* #endregion */
+
+
+
+/* #region: -------- Project Site -------- */
+.ps-hero{
+    position: relative; 
+    display: flex;
+    justify-content: center;
+    height: min(110vh, 1100px, 80vw);
+    background: var(--orange);    
+    overflow: hidden;
+}
+
+.ps-hero-thumbnail{
+    position: absolute; 
+    top: 15%;
+    left: 10%;
+    transform: rotate(-7deg);
+    width: min(50vw, 780px);    
+}
+
+.ps-hero-description{
+    position:absolute;
+    top: 27%;
+    right: 10%;
+    transform: rotate(12deg); 
+}
+
+.ps-hero-deback{
+    width: min(50vw, 780px);   
+}
+
+.ps-hero-text{
+    position: absolute;
+    bottom: 8%;
+    left: 6%;
+    width: min(45vw, 680px);
+    max-height: min(20vw, 400px, 40vh);
+    overflow: hidden;
+}
+
+.ps-hero-tags{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 2em;
+    position: absolute;
+    top: 8%;
+    left: 6%;
+    width: min(20vw, 300px);
+    overflow: hidden;
+    text-align: left;
+}
+
+.ps-hero-content{
+    position: relative; 
+    width: min(1920px, 100vw);
+    height: 100%;
+}
+
+.ps-thumbnail{
+    max-width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 12px;
+    max-height: 90vh;
+    object-fit: contain;
+}
+
+.ps-projects{
+    margin-top: 10em;
+    margin-bottom: 8em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 6.5em 3em;
+}
+
+.role{
+    font-size: 12px;
+    color: #888888;
+    font-style: italic;
+}
+
+video{
+    max-width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 12px;
+    max-height: 90vh;
+    object-fit: contain;
+}
+/* #endregion */
+
+
+
+/* #region: -------- Über Mich -------- */
+.about-me-text{
+    position: relative;
+    display: flex;
+    align-items:end;
+    border-bottom: 1px solid var(--black);
+    border-top: 1px solid var(--black);
+    padding-bottom: 22.4px;
+    padding-top: 112px;
+}
+
+#about-me {
+    margin-top: 6em;
+    margin-bottom: 10em;
+}
+
+.dot {
+  height: 36px;
+  width: 36px;
+  background-color: var(--orange);
+  border-radius: 50%;
+}
+
+#about-me-header{
+    margin-bottom: -18px;
+    margin-right: 16px;
+}
+
+#about-me-picture{
+    position: absolute;
+    right: 0;
+    height: 280px;
+    width: 280px;
+    object-fit: cover;
+    border-radius: 200px;
+}
+/* #endregion */
+
+
+
+/* #region: -------- Kontakt -------- */
+#find-me{
+    z-index: 2;
+    position: absolute;
+    bottom: 62px;  
+    left: 62px;   
+}
+
+.social-links{
+    z-index: 5;
+    color: var(--white) ;
+    background-color: var(--black);
+    padding: 6px 12px;
+    border-radius: 20px;
+}
+
+.social-links:visited{
+    color: var(--white);
+}
+
+#socials{
+    z-index: 3;
+    display: flex;
+    gap: 12px;
+    margin-top: .5em;
+}
+/* #endregion */
+
+
+
+/* #region: -------- Footer -------- */
+footer{
+    width: 100%;
+    padding: 3em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#index-footer{
+    background-color: var(--orange);
+}
+
+footer p{
+    text-align: center;
+    padding: 1.5em auto;
+}
+
+.footer-link{
+    padding: 1.5em 1em;
+    color: var(--black);
+}
+
+.footer-link:visited{
+    color: var(--black);
+}
+
+
+/* #endregion */
+
+
+#impressum-header, #dsgvo-header{
+    margin-bottom: 0.5em;
+    margin-top: 1em;
+}
+
+
+
+/* #region: -------- Handy -------- */
+@media(max-width: 850px) {
+    /* Portfolio */
+    .projects, .ps-projects, #about-me{grid-template-columns: 1fr;}
+
+    .tile{height: 36em;}
+
+    #pg-nav ul{
+        width: 100%;
+        grid-gap: 1em;
+    }
+
+    .thumbnail-info{
+        display: none;
+    }
+
+    .thumbnail-name{
+        font-size: 2.5em;
+    }
+
+    .overlay{
+        transform: translateY(-6px) translateX(-2px);
+    }
+}
+/* #endregion */
