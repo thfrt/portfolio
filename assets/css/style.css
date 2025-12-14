@@ -509,7 +509,7 @@ header .header-content{
 
 .ps-projects{
     margin-top: 10em;
-    margin-bottom: 8em;
+    margin-bottom: 2em;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 6.5em 3em;
@@ -527,6 +527,13 @@ video{
     max-height: 90vh;
     object-fit: contain;
 }
+
+#next-prev{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4em;
+}
+
 /* #endregion */
 
 
@@ -535,6 +542,8 @@ video{
 .about-me-text{
     position: relative;
     display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
     align-items:end;
     border-bottom: 1px solid var(--black);
     border-top: 1px solid var(--black);
@@ -548,24 +557,35 @@ video{
 }
 
 .dot {
-  height: 36px;
-  width: 36px;
-  background-color: var(--orange);
-  border-radius: 50%;
+    display: block;
+    height: 36px;
+    width: 36px;
+    background-color: var(--orange);
+    border-radius: 50%;
+    z-index: 1;
+    flex-shrink: 0;
+}
+
+.about-me-text div {
+    display: inline-flex;
+    align-items: flex-end;
+    gap: 16px;
 }
 
 #about-me-header{
-    margin-bottom: -18px;
-    margin-right: 16px;
+    margin-bottom: -11.2px;
+    z-index: 1;
+    line-height: 1em;
+    min-width: 0;
 }
 
 #about-me-picture{
-    position: absolute;
-    right: 0;
     height: 280px;
     width: 280px;
     object-fit: cover;
     border-radius: 200px;
+    z-index: 0;
+    margin-top: 22.4px;
 }
 /* #endregion */
 
@@ -629,7 +649,10 @@ footer p{
     color: var(--black);
 }
 
-
+.footer-link:hover{
+    color: var(--black);
+    font-weight: 600;
+}
 /* #endregion */
 
 
@@ -638,7 +661,17 @@ footer p{
     margin-top: 1em;
 }
 
+#contact-mobile{
+    display: none;
+}
 
+#contact-desktop{
+    display: block;
+}
+
+#find-me p{
+    display: block;
+}
 
 /* #region: -------- Handy -------- */
 @media(max-width: 850px) {
@@ -687,10 +720,69 @@ footer p{
     }
 
     .card-container {
+        display: flex;
+        flex-wrap: wrap;
         width: min(80vw, 600px);    
         transform: translate(0em, 1em) rotate(-7deg);
+    }
+
+    h1{
+        font-size: 3em;
+        letter-spacing: -2px;
+        margin: 0;
+    }
+
+    .p-big{
+        font-size: 1.5em;
+    }
+
+    .card-text{
+        top: 25px;
+        left: 25px;
+    }
+
+    #occupations{
+        font-size: min(1.5em,2vw);
+        bottom: 25px;
+        left: 25px;
+    }
+
+    .hero-picture{
+        width: 150px;
+        height: 150px;
+        right: -1.5em;
+        bottom: -3em;
+    }
+
+    #hero-about-me{
+        font-size: .5em;
+        bottom: 40%;
+        right: 4%;
+    }
+
+    #contact{
         overflow: hidden;
     }
 
+    #contact-mobile{
+        display: block;
+    }
+
+    #contact-desktop{
+        display: none;
+    }
+
+    #mail{
+        font-size: 2em;
+    }
+
+    #find-me{
+        bottom: 25px;
+        left: 25px;
+    }
+
+    #find-me p{
+        display: none;
+    }
 }
 /* #endregion */
