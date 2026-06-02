@@ -1,6 +1,6 @@
 Portfolio Website
 
-Erster Entwurf.
-Mobile Ansicht noch nicht ausgearbeitet.
+Zweiter Entwurf.
+Mobile Ansicht nutzbar.
 Code noch nicht aufgeräumt.
 Nicht optimiert.
