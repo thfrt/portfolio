@@ -36,7 +36,7 @@
                     <p class="p-big">Hi, ich bin</p>
                     <h1>Thomas Fritzen</h1>
                 </div>
-                <p class="p-mid" id="occupations">3D Generalist, Grafik Designer, Filmemacher</p>
+                <p class="p-mid" id="occupations">3D Generalist, Filmemacher</p>
                 <img src="./images/hero_picture.jpg" alt="Portrait von Thomas Fritzen" class="hero-picture"/>
                 <a class="links" id="hero-about-me" href="#about-me">Über mich ></a>
             </div>
@@ -57,12 +57,6 @@
                         <img src="assets/img/check.svg" class="check filter-icon"/>
                     </button>
 
-                    <button class="filter-chip active" data-filter="design">
-                        <img src="assets/img/Design.svg" class="filter-icon"/>
-                        Design
-                        <img src="assets/img/check.svg" class="check filter-icon"/>
-                    </button>
-
                     <button class="filter-chip active" data-filter="film">
                         <img src="assets/img/Film.svg" class="filter-icon"/>
                         Film
@@ -73,7 +67,7 @@
 
             <div class="projects-right">
                 <p class="p-bold">Willkommen auf meinem Portfolio!</p>
-                <p>Hier findest du eine Auswahl meiner Arbeiten aus den Bereichen 3D, Grafikdesign und Film. Wenn du kreative Unterstützung für dein Projekt suchst, freue ich mich über deine Anfrage und helfe dir sehr gern weiter.
+                <p>Hier findest du eine Auswahl meiner Arbeiten aus den Bereichen 3D und Film. Wenn du kreative Unterstützung für dein Projekt suchst, freue ich mich über deine Anfrage und helfe dir sehr gern weiter.
                 <a class="links" href="#contact">Kontakt ></a>
                 </p>
                 <p><br>Diese ausgewählten Projekte sind entweder im Rahmen meines Studiums, für Kunden oder in meiner Freizeit entstanden. </p>
@@ -84,6 +78,84 @@
 
         <!-- Portfolio  -->
         <section class="projects wrapper content">
+            <a href="./sites/ch.html" class="tile-link" data-tags="3d">
+                <div class="project-tile thumbnail-tile" data-tags="3d" id="first-thumbnail">
+                    <img class="thumbnail" src="images/CH_TN.webp" alt="Kamera Helm Thumbnail">
+                    <svg class="overlay" viewBox="0 0 1000 600" preserveAspectRatio="xMidYMid slice">
+                        <text y="360" transform="rotate(-42 120 280)" 
+                            class="thumbnail-name"> 
+                            <tspan x="165" dy="1em">Kamerahelm</tspan> 
+                        </text>
+
+                        <text x="370" y="102"
+                            transform="rotate(-42 510 180)"
+                            class="thumbnail-info">
+                            3D Asset - Projekt anzeigen >
+                        </text>
+                    </svg>
+                    <div class="thumbnail-icon-box">
+                        <div class="thumbnail-icon">
+                            <img src="assets/img/3D.svg">
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <div class="project-tile project-text" data-tags="3d">
+                <p>Kamerahelm als Übung für 3D-Asset Prozess & Compositing<br>Solo Projekt, umgesetzt in Blender, Substance Painter & Photoshop, 2026.</p>
+            </div>
+
+            <a href="./sites/kw.html" class="tile-link" data-tags="film">
+                <div class="project-tile thumbnail-tile" data-tags="film">
+                    <img class="thumbnail" src="images/KW_TN.webp" alt="KREUZWORT Thumbnail">
+                    <svg class="overlay" viewBox="0 0 1000 600" preserveAspectRatio="xMidYMid slice">
+                        <text y="360" transform="rotate(-42 120 280)" 
+                            class="thumbnail-name"> 
+                            <tspan x="165" dy="1em">KREUZWORT</tspan> 
+                        </text>
+
+                        <text x="370" y="102"
+                            transform="rotate(-42 510 180)"
+                            class="thumbnail-info">
+                            Kurzfilm - Projekt anzeigen >
+                        </text>
+                    </svg>
+                    <div class="thumbnail-icon-box">
+                        <div class="thumbnail-icon">
+                            <img src="assets/img/Film.svg">
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <div class="project-tile project-text" data-tags="film">
+                <p>Kurzfilm über einen Mann, welcher an dem letzten Wort eines Kreuzworträtsel scheitert und darauf all seine Probleme projiziert. <br> Gruppenarbeit für die Hochschule, Drehbuch, Regie, Schnitt von mir, 2024.</p>
+            </div>
+
+            <a href="./sites/cs.html" class="tile-link" data-tags="3d">
+                <div class="project-tile thumbnail-tile" data-tags="3d">
+                    <img class="thumbnail" src="images/CS_TN.webp" alt="Canon AE-1 Thumbnail">
+                    <svg class="overlay" viewBox="0 0 1000 600" preserveAspectRatio="xMidYMid slice">
+                        <text y="360" transform="rotate(-42 120 280)" 
+                            class="thumbnail-name"> 
+                            <tspan x="165" dy="1em">Canon AE-1</tspan> 
+                        </text>
+
+                        <text x="370" y="102"
+                            transform="rotate(-42 510 180)"
+                            class="thumbnail-info">
+                            3D Asset - Projekt anzeigen >
+                        </text>
+                    </svg>
+                    <div class="thumbnail-icon-box">
+                        <div class="thumbnail-icon">
+                            <img src="assets/img/3D.svg">
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <div class="project-tile project-text" data-tags="3d">
+                <p>Nachbildung der Canon AE-1 als 3D Asset<br>Solo Projekt, umgesetzt in Blender, Substance Painter, Illustrator & Photoshop, 2025.</p>
+            </div>
+
             <a href="./sites/pf.html" class="tile-link" data-tags="3d,film">
                 <div class="project-tile thumbnail-tile" data-tags="3d,film">
                     <img class="thumbnail" src="images/PF_TN.webp" alt="Pinguin, Forscher Thumbnail">
@@ -114,90 +186,6 @@
                <p>Kurze 3D Animation über einen Pinguinforscher der lieber Pinguin als Forscher ist. <br>Solo Projekt für die Hochschule, umgesetzt in Blender, 2025.</p>
             </div>
 
-
-            <a href="./sites/mjrm.html" class="tile-link" data-tags="design">
-                <div class="project-tile thumbnail-tile" data-tags="design">
-                    <img class="thumbnail" src="images/MJRM_TN.webp" alt="MJRM Architekten Thumbnail">
-                    <svg class="overlay" viewBox="0 0 1000 600" preserveAspectRatio="xMidYMid slice">
-                        <text y="360" transform="rotate(-42 120 280)" 
-                            class="thumbnail-name"> 
-                            <tspan x="165" dy="0">MJRM</tspan> 
-                            <tspan x="165" dy="1em">Architekten</tspan> 
-                        </text>
-
-                        <text x="370" y="102"
-                            transform="rotate(-42 510 180)"
-                            class="thumbnail-info">
-                            Corporate Design - Projekt anzeigen >
-                        </text>
-                    </svg>
-                    <div class="thumbnail-icon-box">
-                        <div class="thumbnail-icon">
-                            <img src="assets/img/Design.svg">
-                        </div>
-                    </div>
-                </div>
-            </a>
-            <div class="project-tile project-text" data-tags="design">
-                <p>Corporate (Re-) Design für ein Architekturbüro<br>Solo Projekt für die Hochschule, 2024.</p>
-            </div>
-
-            
-            <a href="./sites/kw.html" class="tile-link" data-tags="film">
-                <div class="project-tile thumbnail-tile" data-tags="film">
-                    <img class="thumbnail" src="images/KW_TN.webp" alt="KREUZWORT Thumbnail">
-                    <svg class="overlay" viewBox="0 0 1000 600" preserveAspectRatio="xMidYMid slice">
-                        <text y="360" transform="rotate(-42 120 280)" 
-                            class="thumbnail-name"> 
-                            <tspan x="165" dy="1em">KREUZWORT</tspan> 
-                        </text>
-
-                        <text x="370" y="102"
-                            transform="rotate(-42 510 180)"
-                            class="thumbnail-info">
-                            Kurzfilm - Projekt anzeigen >
-                        </text>
-                    </svg>
-                    <div class="thumbnail-icon-box">
-                        <div class="thumbnail-icon">
-                            <img src="assets/img/Film.svg">
-                        </div>
-                    </div>
-                </div>
-            </a>
-            <div class="project-tile project-text" data-tags="film">
-                <p>Kurzfilm über einen Mann, welcher an dem letzten Wort eines Kreuzworträtsel scheitert und darauf all seine Probleme projiziert. <br> Gruppenarbeit für die Hochschule, Drehbuch, Regie, Schnitt von mir, 2024.</p>
-            </div>
-
-
-            <a href="./sites/p1.html" class="tile-link" data-tags="design">
-                <div class="project-tile thumbnail-tile" data-tags="design">
-                    <img class="thumbnail" src="images/p1_TN.webp" alt="Plakat Designs Thumbnail">
-                    <svg class="overlay" viewBox="0 0 1000 600" preserveAspectRatio="xMidYMid slice">
-                        <text y="360" transform="rotate(-42 120 280)" 
-                            class="thumbnail-name"> 
-                            <tspan x="165" dy="0">Plakat</tspan> 
-                            <tspan x="165" dy="1em">Designs</tspan> 
-                        </text>
-
-                        <text x="370" y="102"
-                            transform="rotate(-42 510 180)"
-                            class="thumbnail-info">
-                            Plakatgestaltung - Projekt anzeigen >
-                        </text>
-                    </svg>
-                    <div class="thumbnail-icon-box">
-                        <div class="thumbnail-icon">
-                            <img src="assets/img/Design.svg">
-                        </div>
-                    </div>
-                </div>
-            </a>
-            <div class="project-tile project-text" data-tags="design">
-                <p>Plakate zu den Themen "Typografie" und "Brutalismus"<br>Solo Projekt für die Hochschule, 2024.</p>
-            </div>
-
-
             <a href="./sites/tt.html" class="tile-link" data-tags="3d">
                 <div class="project-tile thumbnail-tile" data-tags="3d" >
                     <img class="thumbnail" src="images/TT_TN.webp" alt="Till Tools Thumbnail">
@@ -224,92 +212,6 @@
             <div class="project-tile project-text" data-tags="3d">
                 <p>Serie von Produktrendern für einen Hersteller von Präzisionswerkzeugen. <br>Solo Projekt für Till Tools, umgesetzt in Blender, 2022-2024.</p>
             </div>
-            
-
-            <a href="./sites/wg.html" class="tile-link" data-tags="design,3d">
-                <div class="project-tile thumbnail-tile" data-tags="design,3d">
-                    <img class="thumbnail" src="images/WG_TN.webp" alt="Wandgestaltung Thumbnail">
-                    <svg class="overlay" viewBox="0 0 1000 600" preserveAspectRatio="xMidYMid slice">
-                        <text y="360" transform="rotate(-42 120 280)" 
-                            class="thumbnail-name"> 
-                            <tspan x="165" dy="0">Wand</tspan> 
-                            <tspan x="165" dy="1em">Café blub</tspan> 
-                        </text>
-
-                        <text x="370" y="102"
-                            transform="rotate(-42 510 180)"
-                            class="thumbnail-info">
-                            Wandgestaltung - Projekt anzeigen >
-                        </text>
-                    </svg>
-                    <div class="thumbnail-icon-box">
-                        <div class="thumbnail-icon">
-                            <img src="assets/img/Design.svg">
-                        </div>
-                        <div class="thumbnail-icon">
-                            <img src="assets/img/3D.svg">
-                        </div>
-                    </div>
-                </div>
-            </a>
-            <div class="project-tile project-text" data-tags="design,3d">
-                <p>Wandgestaltung für einen neuen Sitzbereich für ein Café der Hochschule. <br>Team Projekt für die Hochschule, 2025.</p>
-            </div>
-
-
-            <a href="./sites/p3d.html" class="tile-link" data-tags="3d">
-                <div class="project-tile thumbnail-tile" data-tags="3d">
-                    <img class="thumbnail" src="images/P3D_TN.webp" alt="Persönliche 3D Projekte Thumbnail">
-                    <svg class="overlay" viewBox="0 0 1000 600" preserveAspectRatio="xMidYMid slice">
-                        <text y="360" transform="rotate(-42 120 280)" 
-                            class="thumbnail-name"> 
-                            <tspan x="165" dy="0">Persönliche</tspan> 
-                            <tspan x="165" dy="1em">3D Projekte</tspan> 
-                        </text>
-
-                        <text x="370" y="102"
-                            transform="rotate(-42 510 180)"
-                            class="thumbnail-info">
-                            3D Render - Projekt anzeigen >
-                        </text>
-                    </svg>
-                    <div class="thumbnail-icon-box">
-                        <div class="thumbnail-icon">
-                            <img src="assets/img/3D.svg">
-                        </div>
-                    </div>
-                </div>
-            </a>
-            <div class="project-tile project-text" data-tags="3d">
-                <p>Sammlung von 3D Rendern aus mehreren Jahren von Freizeitprojekten, durch die ich u.a. Blender erlernt habe. <br>Solo Projekte aus meiner Freizeit, umgesetzt in Blender, 2021-2024.</p>
-            </div>
-
-            <a href="./sites/cs.html" class="tile-link" data-tags="3d">
-                <div class="project-tile thumbnail-tile" data-tags="3d">
-                    <img class="thumbnail" src="images/CS_TN.webp" alt="Kamera Kit Thumbnail">
-                    <svg class="overlay" viewBox="0 0 1000 600" preserveAspectRatio="xMidYMid slice">
-                        <text y="360" transform="rotate(-42 120 280)" 
-                            class="thumbnail-name"> 
-                            <tspan x="165" dy="0">Kamera Kit</tspan> 
-                            <tspan x="165" dy="1em">3D Modelle</tspan> 
-                        </text>
-
-                        <text x="370" y="102"
-                            transform="rotate(-42 510 180)"
-                            class="thumbnail-info">
-                            3D Render - Projekt anzeigen >
-                        </text>
-                    </svg>
-                    <div class="thumbnail-icon-box">
-                        <div class="thumbnail-icon">
-                            <img src="assets/img/3D.svg">
-                        </div>
-                    </div>
-                </div>
-            </a>
-            <div class="project-tile project-text" data-tags="3d">
-                <p>Kleines Set an detaillierteren 3D Modellen, entstanden für ein Hochschulprojekt.<br>Solo Projekt für die Hochschule, umgesetzt in Blender, 2025.</p>
-            </div>
         </section>
 
 
@@ -317,22 +219,47 @@
 
          <!-- Über Mich -->
         <section class="wrapper content" id="about-me">
-            <div class="about-me-text">
+            <div class="about-me-head">
                 <div>
-                    <h2 id="about-me-header">Über mich</h2>
+                    <h2 id="about-me-header">Über <br class="br-mobile" /> mich</h2>
                     <span class="dot"></span>
                 </div>
                 <img src="./images/about_me_picture.jpg" alt="Portrait von Thomas Fritzen" id="about-me-picture"/>
             </div>
             <div class="about-me-text">
                 <p>
-                    Hi, ich bin Thomas - schon immer haben Filme und andere kreative Projekte neben Begeisterung noch einen weiteren Gedanken ausgelöst - sowas muss ich auch machen: Dinge kreieren, gestalten, erzählen. 
-                    <br>Dieser Gedanke hat sich weiter verfestigt als ich 2019 angefangen habe mir selbst 3D Modellierung in Blender beizubringen. Zunächst rein aus Spaß für persönliche Projekte und später freiberuflich für einige Kunden.
-                    <br><br>Momentan studiere ich Medieninformatik an der Hochschule Harz. Im Laufe des Studiums habe ich zudem ein großes Interesse an Film und Grafik Design entwickelt und viel zu diesen Gebieten gelernt. 
-                    Dort hatte ich auch die letzten drei Semester die Möglichkeit in Tutorien (u.a. für Mediengestaltung) mein Wissen mit anderen Studierenden zu teilen. 
-                    In den genannten Bereichen und allem, was dazwischen liegt möchte ich weiter Erfahrung sammeln und an Projekten arbeiten. Ich freue mich, wenn ich dich bei deinem Projekt unterstützen kann.
+                    Hi, ich bin Thomas – schon immer habe ich mir
+                    bei Filmen und anderen kreativen Projekten
+                    gedacht: sowas muss ich auch machen: Dinge
+                    kreieren, gestalten, erzählen.
+                    <br><br>
+                    Dieser Gedanke hat sich weiter verfestigt
+                    als ich 2019 angefangen habe mir selbst 3D
+                    Gestaltung in Blender beizubringen. Darauf
+                    folgten zahlreiche weitere Gestaltungsbereiche und Programme. Zunächst rein aus Spaß
+                    für persönliche Projekte und später freiberuflich für einige Kunden.
+                    <br><br>
+                    Momentan studiere ich den Bachelor Medieninformatik an der Hochschule Harz. Im Laufe
+                    des Studiums habe ich zudem ein großes
+                    Interesse an Film und Grafik Design entwickelt
+                    und viel zu diesen Gebieten gelernt. Durch den
+                    Studiengang habe ich in einer breiten Auswahl an Fachgebieten Kenntnisse gesammelt,
+                    theoretisch und praktisch, gestalterisch und
+                    technisch. Dort hatte ich auch die letzten drei
+                    Semester die Möglichkeit in Tutorien (u.a. für
+                    Mediengestaltung) mein Wissen mit anderen
+                    Studierenden zu teilen. In den genannten
+                    Bereichen und allem, was dazwischen liegt
+                    möchte ich weiter Erfahrung sammeln und an
+                    Projekten arbeiten.
+                    <br><br><br>
+                    Softwarekenntnisse:
                 </p>
+                <img src="./images/software.webp" alt="Softwarekenntnisse" id="software"/>
+                <p id="softwareL-note">Möchte ich noch lernen:</p>
+                <img src="./images/softwareL.webp" alt="Learning Softwarekenntnisse" id="softwareL"/>
             </div>
+                
         </section>
 
 
@@ -359,7 +286,7 @@
 
     <!-- Footer  -->
     <footer id="index-footer">
-        <p>Thomas Fritzen © 2025</p>
+        <p>Thomas Fritzen © 2026</p>
         <p>
             <a class="footer-link" href="./sites/impressum.html">Impressum</a>
             <a class="footer-link" href="./sites/dsgvo.html">DSGVO</a>
@@ -371,4 +298,3 @@
 
 </body>
 </html>
-

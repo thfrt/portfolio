@@ -1,0 +1,224 @@
+/* Page styles */
+.wrapper > main, #pg-nav {
+    width: 70em;
+    margin: 0 auto;
+}
+
+h1, h2 {margin-bottom: 20px;}
+p {margin-bottom: 10px;}
+p:last-child {margin: 0;}
+
+
+/* Navigation */
+#pg-nav {text-align: center;}
+#pg-nav > ul, .sub-list ul {list-style: none;}
+
+
+#pg-nav > ul {
+    display: grid;
+    grid-template-areas: ". . . .";
+    grid-gap: 30px;
+    padding: 0;
+}
+
+#pg-nav > ul li a, .sub-list > ul li a{
+    color: #fafafa;
+    font-size: 1.5rem;
+}
+
+#pg-nav > ul li, .sub-list ul li {
+    padding: 20px 0;
+}
+
+.sub-list {
+    background-color: #d1cfcc;
+    display: none;
+    position: absolute;
+    margin-top: 20px;
+    width: 100%;
+}
+.dropdown {
+  position: relative;
+}
+
+.dropdown:hover > .sub-list {display: block;}
+
+
+/* Hamburger from Tut 9 SEM 1 */
+#hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    position: relative;
+    overflow: visible;
+}
+
+#hamburger .hamburger-inner, #hamburger .hamburger-inner::after,
+#hamburger .hamburger-inner::before {
+    background-color: #fafafa;
+    border-radius: 4px;
+    width: inherit;
+    height: 4px;
+    position: absolute;
+}
+
+#hamburger .hamburger-inner::after, #hamburger .hamburger-inner::before {
+    display: block;
+    content: "";
+}
+
+#hamburger .hamburger-inner::before {top: -10px;}
+#hamburger .hamburger-inner::after {bottom: -10px;}
+
+
+#hamburger.active .hamburger-inner {transform: rotate(45deg);}
+#hamburger.active .hamburger-inner::before {
+    top: 0;
+    opacity: 0;
+}
+#hamburger.active .hamburger-inner::after {
+    bottom: 0;
+    transform: rotate(-90deg);
+}
+
+
+/* Portfolio */
+.portfolio {
+    display: grid;
+    grid-template-areas: ". . .";
+    grid-gap: 50px;
+}
+
+.tile {
+    background-color: #d1cfcc;
+    min-height: 35vw;
+}
+
+.text {padding: 15px;}
+
+.pic img {
+    width: 100%;
+    height: auto;
+}
+
+
+/* Custom video controls */
+#video-controls {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    align-items: baseline;
+    bottom: 0;
+    left: 0;
+    transition: all 0.2s ease;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5));
+    padding: 20px;
+    color: #FAFAFA;
+}
+
+#video-controls.hidden {display: none;}
+
+.seek:hover+.seek-tooltip {
+    display: block;
+}
+
+.seek-tooltip {
+    display: none;
+    position: absolute;
+    top: -50px;
+    margin-left: -20px;
+    font-size: 12px;
+    padding: 3px;
+    content: attr(data-title);
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* Responsive video */
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 0;
+    height: 0;
+    overflow: hidden;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed,
+.video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Mobile styles */
+@media(max-width: 1280px) { /* Changed from 1075px to prevent overflow of portfolio grid */
+    /* SHARED STYLES */
+    .wrapper > main, #pg-nav {width: calc(100% - 60px);}
+
+    /* HEADER */
+    #pg-nav > ul {
+        display: grid;
+        grid-template-areas: ". . . .";
+        grid-gap: 5px;
+    }
+
+    /* MAIN */
+    .portfolio {
+        grid-template-areas: ". .";
+        grid-gap: 30px;
+    }
+
+    .tile {min-height: 45vw;}
+}
+
+@media(max-width: 850px) {
+    /* HEADER */
+    .wrapper > header {padding: 20px;}
+    #hamburger {display: flex;}
+    #pg-nav {width: auto;}
+    #pg-nav.active ul {display: block;}
+    #pg-nav ul {
+        display: grid;
+        grid-template-areas: ".";
+        grid-gap: 30px;
+        display: none;
+    }
+    .sub-list {position: relative;}
+
+    /* MAIN */
+    .wrapper > main {width: calc(100% - 40px);}
+
+    .portfolio {
+        grid-template-areas: ".";
+        grid-gap: 20px;
+    }
+
+    .tile {min-height: 100vw;}
+}
+
+
+/* For demonstration purposes only */
+.wrapper > header h1, .wrapper > main h1, .wrapper > footer h1 {text-align: center;}
+.wrapper > header {margin-bottom: 30px;}
+.wrapper > footer {margin-top: 30px; padding: 20px;}
+
+.wrapper > header, .wrapper > footer {
+    background-color: #333;
+    color: #fafafa;
+}
+
+#pg-nav > ul li:hover {
+    background-color: #d1cfcc;
+    color: #333;
+}
+#pg-nav > ul li a:hover{
+    color: #333;
+}
