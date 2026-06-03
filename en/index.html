@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../assets/css/reset.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+
+    <title>Portfolio Thomas Fritzen</title>
+</head>
+
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-content">
+            <nav id="pg-nav">
+                <ul>
+                    <li><a class="nav-link" href="#home">Home</a></li>
+                    <li><a class="nav-link" href="#projects">Projects</a></li>
+                    <li><a class="nav-link" href="#about-me">About Me</a></li>
+                    <li><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+
+    <main>
+        <a href="../index.html" class="language-link">DE | <strong>EN</strong></a>
+
+        <!-- Welcome  -->
+        <section class="hero" id="home">
+            <div class="card-container">
+                <img src="../assets/img/titlecard.svg" class="card-svg"/>
+                <div class="card-text">
+                    <p class="p-big">Hi, I'm</p>
+                    <h1>Thomas Fritzen</h1>
+                </div>
+                <p class="p-mid" id="occupations">3D Generalist, Filmmaker</p>
+                <img src="../images/hero_picture.jpg" alt="Portrait of Thomas Fritzen" class="hero-picture"/>
+                <a class="links" id="hero-about-me" href="#about-me">About Me ></a>
+            </div>
+            <a href="#projects">
+                <img class="arrows" id="continue-arrow" src="../assets/img/arrow_down.svg" alt="continue arrow">
+            </a>        
+        </section>
+
+
+        <!-- Projects Description -->
+        <section class="projects-top wrapper content" id="projects">
+            <div class="projects-left">
+                <h2 id="project-header">Projects</h2>
+                <div class="filters">
+                    <button class="filter-chip active" data-filter="3d">
+                        <img src="../assets/img/3D.svg" class="filter-icon"/>
+                        3D
+                        <img src="../assets/img/check.svg" class="check filter-icon"/>
+                    </button>
+
+                    <button class="filter-chip active" data-filter="film">
+                        <img src="../assets/img/Film.svg" class="filter-icon"/>
+                        Film
+                        <img src="../assets/img/check.svg" class="check filter-icon"/>
+                    </button>
+                </div>
+            </div>
+
+            <div class="projects-right">
+                <p class="p-bold">Welcome to my portfolio!</p>
+                <p>Here you can find a selection of my work in the fields of 3D and film. If you are looking for creative support for your project, feel free to get in touch. I'd be happy to help.
+                <a class="links" href="#contact">Contact ></a>
+                </p>
+                <p><br>These selected projects were created either as part of my studies, for clients, or in my spare time.</p>
+                <p>The orange buttons can be used to filter by category.</p>
+            </div>
+        </section>
+
+
+        <!-- Portfolio  -->
+        <section class="projects wrapper content">
+            <a href="./sites/ch.html" class="tile-link" data-tags="3d">
+                <div class="project-tile thumbnail-tile" data-tags="3d" id="first-thumbnail">
+                    <img class="thumbnail" src="../images/CH_TN.webp" alt="Camera Helmet Thumbnail">
+                    <svg class="overlay" viewBox="0 0 1000 600" preserveAspectRatio="xMidYMid slice">
+                        <text y="360" transform="rotate(-42 120 280)" 
+                            class="thumbnail-name"> 
+                            <tspan x="165" dy="0">Camera</tspan> 
+                            <tspan x="165" dy="1em">Helmet</tspan> 
+                        </text>
+
+                        <text x="370" y="102"
+                            transform="rotate(-42 510 180)"
+                            class="thumbnail-info">
+                            3D Asset - View Project >
+                        </text>
+                    </svg>
+                    <div class="thumbnail-icon-box">
+                        <div class="thumbnail-icon">
+                            <img src="../assets/img/3D.svg">
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <div class="project-tile project-text" data-tags="3d">
+                <p>Camera helmet created as an exercise in the 3D asset workflow & compositing.<br>Solo project, created in Blender, Substance Painter & Photoshop, 2026.</p>
+            </div>
+
+            <a href="./sites/kw.html" class="tile-link" data-tags="film">
+                <div class="project-tile thumbnail-tile" data-tags="film">
+                    <img class="thumbnail" src="../images/KW_TN.webp" alt="KREUZWORT Thumbnail">
+                    <svg class="overlay" viewBox="0 0 1000 600" preserveAspectRatio="xMidYMid slice">
+                        <text y="360" transform="rotate(-42 120 280)" 
+                            class="thumbnail-name"> 
+                            <tspan x="165" dy="1em">KREUZWORT</tspan> 
+                        </text>
+
+                        <text x="370" y="102"
+                            transform="rotate(-42 510 180)"
+                            class="thumbnail-info">
+                            Short Film - View Project >
+                        </text>
+                    </svg>
+                    <div class="thumbnail-icon-box">
+                        <div class="thumbnail-icon">
+                            <img src="../assets/img/Film.svg">
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <div class="project-tile project-text" data-tags="film">
+                <p>Short film about a man who fails at the final word of a crossword puzzle and projects all of his problems onto it.<br>Group project for university, screenplay, directing and editing by me, 2024.</p>
+            </div>
+
+            <a href="./sites/cs.html" class="tile-link" data-tags="3d">
+                <div class="project-tile thumbnail-tile" data-tags="3d">
+                    <img class="thumbnail" src="../images/CS_TN.webp" alt="Canon AE-1 Thumbnail">
+                    <svg class="overlay" viewBox="0 0 1000 600" preserveAspectRatio="xMidYMid slice">
+                        <text y="360" transform="rotate(-42 120 280)" 
+                            class="thumbnail-name"> 
+                            <tspan x="165" dy="1em">Canon AE-1</tspan> 
+                        </text>
+
+                        <text x="370" y="102"
+                            transform="rotate(-42 510 180)"
+                            class="thumbnail-info">
+                            3D Asset - View Project >
+                        </text>
+                    </svg>
+                    <div class="thumbnail-icon-box">
+                        <div class="thumbnail-icon">
+                            <img src="../assets/img/3D.svg">
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <div class="project-tile project-text" data-tags="3d">
+                <p>Recreation of the Canon AE-1 as a 3D asset.<br>Solo project, created in Blender, Substance Painter, Illustrator & Photoshop, 2025.</p>
+            </div>
+
+            <a href="./sites/pf.html" class="tile-link" data-tags="3d,film">
+                <div class="project-tile thumbnail-tile" data-tags="3d,film">
+                    <img class="thumbnail" src="../images/PF_TN.webp" alt="Penguin Researcher Thumbnail">
+                    <svg class="overlay" viewBox="0 0 1000 600" preserveAspectRatio="xMidYMid slice">
+                        <text y="360" transform="rotate(-42 120 280)" 
+                            class="thumbnail-name"> 
+                            <tspan x="165" dy="0">Penguin,</tspan> 
+                            <tspan x="165" dy="1em">Researcher</tspan> 
+                        </text>
+
+                        <text x="370" y="102"
+                            transform="rotate(-42 510 180)"
+                            class="thumbnail-info">
+                            3D Animation - View Project >
+                        </text>
+                    </svg>
+                    <div class="thumbnail-icon-box">
+                        <div class="thumbnail-icon">
+                            <img src="../assets/img/3D.svg">
+                        </div>
+                        <div class="thumbnail-icon">
+                            <img src="../assets/img/Film.svg">
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <div class="project-tile project-text" data-tags="3d,film">
+               <p>Short 3D animation about a penguin researcher who would rather be a penguin than a researcher.<br>Solo university project, created in Blender, 2025.</p>
+            </div>
+
+            <a href="./sites/tt.html" class="tile-link" data-tags="3d">
+                <div class="project-tile thumbnail-tile" data-tags="3d" >
+                    <img class="thumbnail" src="../images/TT_TN.webp" alt="Till Tools Thumbnail">
+                    <svg class="overlay" viewBox="0 0 1000 600" preserveAspectRatio="xMidYMid slice">
+                        <text y="360" transform="rotate(-42 120 280)" 
+                            class="thumbnail-name"> 
+                            <tspan x="165" dy="0">Till Tools</tspan> 
+                            <tspan x="165" dy="1em">Product Vis.</tspan> 
+                        </text>
+
+                        <text x="370" y="102"
+                            transform="rotate(-42 510 180)"
+                            class="thumbnail-info">
+                            3D Render - View Project >
+                        </text>
+                    </svg>
+                    <div class="thumbnail-icon-box">
+                        <div class="thumbnail-icon">
+                            <img src="../assets/img/3D.svg">
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <div class="project-tile project-text" data-tags="3d">
+                <p>Series of product renders for a precision tool manufacturer.<br>Solo project for Till Tools, created in Blender, 2022-2024.</p>
+            </div>
+        </section>
+
+                <!-- About Me -->
+        <section class="wrapper content" id="about-me">
+            <div class="about-me-head">
+                <div>
+                    <h2 id="about-me-header">About <br class="br-mobile" /> Me</h2>
+                    <span class="dot"></span>
+                </div>
+                <img src="../images/about_me_picture.jpg" alt="Portrait of Thomas Fritzen" id="about-me-picture"/>
+            </div>
+            <div class="about-me-text">
+                <p>
+                    Hi, I'm Thomas. Ever since I was young, I watched films and other creative projects and thought:
+                    I want to do that too. Create things, design, tell stories.
+                    <br><br>
+                    This idea became even stronger when I started teaching myself 3D design in Blender in 2019.
+                    Many more creative fields and software followed. At first purely for fun and personal projects,
+                    and later for freelance work for several clients.
+                    <br><br>
+                    I am currently studying for a Bachelor's degree in Media Informatics at Harz University of Applied Sciences.
+                    During my studies, I also developed a strong interest in film and graphic design and learned a lot about these fields.
+                    Through the degree program, I have gained knowledge across a broad range of disciplines,
+                    both theoretical and practical, creative and technical.
+                    During the last three semesters, I also had the opportunity to share my knowledge with fellow students
+                    through tutorials, including media design.
+                    I want to continue gaining experience and working on projects in these fields and everything in between.
+                    <br><br><br>
+                    Software Skills:
+                </p>
+                <img src="../images/software.webp" alt="Software Skills" id="software"/>
+                <p id="softwareL-note">Still want to learn:</p>
+                <img src="../images/softwareL.webp" alt="Learning Software Skills" id="softwareL"/>
+            </div>
+                
+        </section>
+
+
+
+        <!-- Contact -->
+        <section class="contact" id="contact">
+            <div class="card-container">
+                <img src="../assets/img/titlecard.svg" class="card-svg"/>
+                <div class="card-text">
+                    <p id="contact-desktop" class="p-big">Do you have questions, projects I could support you with, or would you like to connect? Just send me a message:</p>
+                    <p id="contact-mobile" class="p-big">Feel free to send me a message:</p>
+                    <p id="mail">th.frtz@gmail.com</p>
+                </div>
+                <div id="find-me">                
+                    <p>Or find me here:</p>
+                    <div id="socials">
+                        <a class="social-links" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/thomas-fritzen-b918bb3a0">LinkedIn</a>
+                        <a class="social-links" target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/th.ftz/">Instagram</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer  -->
+    <footer id="index-footer">
+        <p>Thomas Fritzen © 2026</p>
+        <p>
+            <a class="footer-link" href="./sites/impressum.html">Legal Notice</a>
+            <a class="footer-link" href="./sites/dsgvo.html">Privacy Policy</a>
+        </p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="../assets/js/script.js"></script> 
+
+</body>
+</html>
