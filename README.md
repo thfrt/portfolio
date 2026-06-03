@@ -2,5 +2,6 @@ Portfolio Website
 
 Zweiter Entwurf.
 Mobile Ansicht nutzbar.
-Code noch nicht aufgeräumt.
+Deutsch und Englische Version vorhanden.
+Code immer noch nicht aufgeräumt.
 Nicht optimiert.
