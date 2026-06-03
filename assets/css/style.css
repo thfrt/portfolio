@@ -67,7 +67,6 @@ body {
     color: var(--black);
     font-weight: 600;
 }
-
 /* #endregion */
 
 
@@ -189,6 +188,33 @@ header .header-content{
 .nav-link:visited {
     color: var(--black);
 }
+
+.language-link{
+    position: fixed;
+    top: 17px;
+    right: 17px;
+    z-index: 30;
+    color: var(--black);
+    border: 1px solid var(--black);
+    border-radius: 50px;
+    background-color: var(--orange);
+    font-size: 1em; /* 16px */
+    font-weight: 300;
+    padding: .5em 1.5em; 
+}
+
+.language-link:visited{
+    color: var(--black);
+}
+
+.language-link:hover{
+    cursor: pointer;
+    background-color: #FF8855;
+}
+
+strong{
+    font-weight: 600;
+}
 /* #endregion */
 
 
@@ -218,9 +244,10 @@ header .header-content{
 
 .card-text {
     position: absolute;
-    top: 62px;    
-    left: 62px;
+    top: 0px;    
+    left: 0px;
     z-index: 2;
+    padding: 62px; 
 }
 
 #occupations{
@@ -760,12 +787,12 @@ footer p{
 
     #pg-nav{
         width: 95%;
-        grid-gap: .2em;
-        margin: 0 auto;
+        margin: 0 17px;
     }
 
     #pg-nav ul{
         width: 100%;
+        grid-gap: .5em;
     }
 
     .thumbnail-info{
@@ -777,17 +804,20 @@ footer p{
         padding: .5em 0em; 
     }
 
+    .language-link{
+        top: auto;
+        right: auto;
+        bottom: 17px;
+        left: 17px;
+        padding: .5em 1em;
+    }
+
     .thumbnail-name{
         font-size: 2.5em;
     }
 
     .overlay{
         transform: translateY(-6px) translateX(-2px);
-    }
-
-    .card-text{
-        top: 32px;    
-        left: 32px;
     }
 
     .card-container {
@@ -809,8 +839,7 @@ footer p{
     
 
     .card-text{
-        top: 25px;
-        left: 25px;
+        padding: 25px; 
     }
 
     #occupations{
